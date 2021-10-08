@@ -60,7 +60,7 @@ ABOUT_TEXT = """--**About Me**-- 😎
 
 🤖 **Name :** [Link From File 🔗](https://telegram.me/{})
 
-📢 **Channel :** [Fayas Noushad](https://telegram.me/cusciproject)
+📢 **Channel :** [Cuscì Project](https://telegram.me/cusciproject)
 
 📝 **Language :** [Python3](https://python.org)
 
