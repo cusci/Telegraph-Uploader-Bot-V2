@@ -35,39 +35,32 @@ Bot = Client(
     api_hash = os.environ["API_HASH"],
 )
 
-START_TEXT = """**Hello {} 😌
-I am small media or file to telegra.ph link uploader bot.**
+START_TEXT = """**Ciao {} 😌
 
->> `I can convert under 5MB photo or video to telegraph link.`
+👉🏻 Invia un media per ricevere il link Telegra.ph
 
-Made by @FayasNoushad"""
+💥 Bot By @cusciproject**"""
 
-HELP_TEXT = """**Hey, Follow these steps:**
+HELP_TEXT = """**Come funziona**
 
-➠ Just give me a media under 5MB
-➠ Then I will download it
-➠ I will then upload it to the telegra.ph link
+Inviami un video/gif/foto fino a 5 MB.  
 
-**Available Commands**
+lo caricherò su telegra.ph e ti darò il link diretto
 
-/start - Checking Bot Online
-/help - For more help
-/about - For more about me
-/status - For bot updates
+**Comandi eseguibili**
 
-Made by @FayasNoushad"""
+/start - Avvia il bot
+/help - Istruzioni sul funzionamento
+/about - Per saperne di più su di me
+/status - Stato del bot
+
+💥 Bot By @cusciproject"""
 
 ABOUT_TEXT = """--**About Me**-- 😎
 
-🤖 **Name :** [Telegraph Uploader](https://telegram.me/{})
+🤖 **Name :** [Link From File 🔗](https://telegram.me/{})
 
-👨‍💻 **Developer :** [Fayas](https://github.com/FayasNoushad)
-
-📢 **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
-
-👥 **Group :** [Developer Team](https://telegram.me/TheDeveloperTeam)
-
-🌐 **Source :** [👉 Click here](https://github.com/FayasNoushad/Telegraph-Uploader-Bot-V2)
+📢 **Channel :** [Fayas Noushad](https://telegram.me/cusciproject)
 
 📝 **Language :** [Python3](https://python.org)
 
@@ -200,7 +193,7 @@ async def telegraph_upload(bot, update):
             return
     medianame = "./DOWNLOADS/" + "FayasNoushad/FnTelegraphBot"
     text = await update.reply_text(
-        text="<code>Downloading to My Server ...</code>",
+        text="Caricamento in corso...</code>",
         disable_web_page_preview=True
     )
     await bot.download_media(
@@ -208,7 +201,7 @@ async def telegraph_upload(bot, update):
         file_name=medianame
     )
     await text.edit_text(
-        text="<code>Downloading Completed. Now I am Uploading to telegra.ph Link ...</code>",
+        text="Caricamento completato!!",
         disable_web_page_preview=True
     )
     try:
@@ -226,15 +219,15 @@ async def telegraph_upload(bot, update):
         print(error)
         return
     await text.edit_text(
-        text=f"<b>Link :-</b> <code>https://telegra.ph{response[0]}</code>\n\n<b>Join :-</b> @FayasNoushad",
+        text=f"<b>Link :-</b> https://telegra.ph{response[0]}\n\n<b>By </b> @cusciproject",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="Open Link", url=f"https://telegra.ph{response[0]}"),
-                    InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
+                    InlineKeyboardButton(text="Apri Link", url=f"https://telegra.ph{response[0]}"),
+                    InlineKeyboardButton(text="Condividi Link", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
                 ],
-                [InlineKeyboardButton(text="⚙ Join Updates Channel ⚙", url="https://telegram.me/FayasNoushad")]
+                [InlineKeyboardButton(text="⚙ Canale ⚙", url="https://telegram.me/cusciproject")]
             ]
         )
     )
@@ -288,7 +281,7 @@ async def broadcast(bot, update):
 async def status(bot, update):
     total_users = await db.total_users_count()
     text = "**Bot Status**\n"
-    text += f"\n**Total Users:** `{total_users}`"
+    text += f"\n**Total Users:** {total_users}  👥"
     await update.reply_text(
         text=text,
         quote=True,
