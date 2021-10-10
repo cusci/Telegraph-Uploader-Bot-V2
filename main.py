@@ -60,13 +60,10 @@ ABOUT_TEXT = """--**About Me**-- 😎
 
 🤖 **Name :** [Link From File 🔗](https://telegram.me/{})
 
-📢 **Channel :** [Cuscì Project](https://telegram.me/cusciproject)
+📝 **Created :** 05/10/2021
 
-📝 **Language :** [Python3](https://python.org)
+📢 **Channel Update :** [Cuscì Project](https://telegram.me/cusciproject)
 
-🧰 **Framework :** [Pyrogram](https://pyrogram.org)
-
-📡 **Server :** [Heroku](https://heroku.com)"""
 
 FORCE_SUBSCRIBE_TEXT = "<code>Sorry Dear You Must Join My Updates Channel for using me 😌😉....</code>"
 
