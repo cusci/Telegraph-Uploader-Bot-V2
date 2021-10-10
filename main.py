@@ -52,7 +52,6 @@ lo caricherò su telegra.ph e ti darò il link diretto
 /start - Avvia il bot
 /help - Istruzioni sul funzionamento
 /about - Per saperne di più su di me
-/status - Stato del bot
 
 💥 Bot By @cusciproject"""
 
