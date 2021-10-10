@@ -60,10 +60,9 @@ ABOUT_TEXT = """--**About Me**-- 😎
 
 🤖 **Name :** [Link From File 🔗](https://telegram.me/{})
 
-📝 **Created :** '5/10/2021'
+📝 **Created :** "<code>5/10/2021</code>
 
 📢 **Channel Update :** [Cuscì Project](https://telegram.me/cusciproject)
-
 
 FORCE_SUBSCRIBE_TEXT = "<code>Sorry Dear You Must Join My Updates Channel for using me 😌😉....</code>"
 
