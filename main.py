@@ -57,14 +57,14 @@ lo caricherò su telegra.ph e ti darò il link diretto
 💥 Bot By @cusciproject"""
 
 ABOUT_TEXT = """--**About Me**-- 😎
-
 🤖 **Name :** [Link From File 🔗](https://telegram.me/{})
 
-📝 **Created :** "<code>5/10/2021</code>
+📝 **Created :** "<code>05/10/21</code>"
 
-📢 **Channel Update :** [Cuscì Project](https://telegram.me/cusciproject)
+📢 **Channel Update :** [Cuscì Project](https://telegram.me/cusciproject)"""
 
 FORCE_SUBSCRIBE_TEXT = "<code>Sorry Dear You Must Join My Updates Channel for using me 😌😉....</code>"
+
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
